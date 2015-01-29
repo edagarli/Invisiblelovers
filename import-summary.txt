@@ -1,0 +1,73 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* README.md
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => wonderful2master/src/main/AndroidManifest.xml
+* assets/ => wonderful2master/src/main/assets/
+* libs/YoumiSdk_v4.09_2014-06-16.jar => wonderful2master/libs/YoumiSdk_v4.09_2014-06-16.jar
+* libs/armeabi/libbspatch.so => wonderful2master/src/main/jniLibs/armeabi/libbspatch.so
+* libs/bmob_v3.1.2beta.jar => wonderful2master/libs/bmob_v3.1.2beta.jar
+* libs/com.umeng.message.lib.jar => wonderful2master/libs/com.umeng.message.lib.jar
+* libs/mta-sdk-1.0.0.jar => wonderful2master/libs/mta-sdk-1.0.0.jar
+* libs/open_sdk.jar => wonderful2master/libs/open_sdk.jar
+* libs/umeng-analytics-v5.2.3.jar => wonderful2master/libs/umeng-analytics-v5.2.3.jar
+* libs/umeng-fb-v4.3.2.jar => wonderful2master/libs/umeng-fb-v4.3.2.jar
+* libs/umeng-update-v2.4.2.jar => wonderful2master/libs/umeng-update-v2.4.2.jar
+* libs/universal-image-loader-1.9.1.jar => wonderful2master/libs/universal-image-loader-1.9.1.jar
+* res/ => wonderful2master/src/main/res/
+* src/ => wonderful2master/src/main/java/
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
